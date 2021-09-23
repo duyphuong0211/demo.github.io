@@ -5,9 +5,29 @@
   margin-bottom: 1rem;
 }
 
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
 }
 
 // Backgrounds
@@ -30,15 +50,17 @@
   }
   &-white {
     @include set-background(#fff);
+    border: #ccc 1px solid;
   }
 }
 
-//Buttons
+// Buttons
 .btn {
   display: inline-block;
   background: $light-color;
   color: #333;
-  padding: none;
+  padding: 0.4rem 1.3rem;
+  border: none;
   cursor: pointer;
   font-size: 1rem;
   margin-right: 0.5rem;
@@ -70,7 +92,7 @@
     }
   }
   &:hover {
-    background: light($danger-color, 20%);
+    background: lighten($dark-color, 20%);
     color: #fff;
   }
 }
